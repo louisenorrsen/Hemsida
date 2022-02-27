@@ -55,17 +55,10 @@ header {
 
 main {
     padding: .5em;
-}
-
-footer {
-    position: absolute;
-    bottom: 1rem;
-    text-align: center;
-    border-top: 1px solid var(--text-clr);
-    padding-top: .5em;
-    color: var(--text-clr);
-    font-weight: 300;
-    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Startsida */
@@ -140,7 +133,29 @@ footer {
     font-size: 1rem;
 }
 
-.about-me a {
+a {
     color: var(--pop-clr);
     font-weight: 500;
+}
+
+/* Kontakt */
+.contact {
+    margin-top: 1em;
+    color: var(--text-clr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.contact-links {
+    color: var(--text-clr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;    
+}
+
+.contact-links i {
+    margin: .5em;
+    color: var(--pop-clr);
+    font-size: 2rem;
 }
