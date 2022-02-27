@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&family=Roboto:wght@100;400;500&display=swap');
+
+:root {
+    --bg-color: rgb(33, 33, 33);
+    --t-bg-color: rgba(33, 33, 33, 0.782);
+    --text-clr: rgb(252, 242, 228);
+
+    --nav-list-bg-clr: rgb(242, 186, 242);
+    --nav-list-text-clr: #000;
+
+    --pop-clr: rgb(206, 103, 206);
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    height: 100vh;
+    background-color: var(--bg-color);
+}
+
+header {
+    font-size: 1.5rem;
+    text-align: center;
+    color: var(--text-clr);
+    font-family: 'Merriweather', serif;
+}
+
+.nav-list {
+    display: flex;
+    gap: .3em;
+    list-style: none;
+}
+
+.nav-list-item {
+    color: var(--nav-list-text-clr);
+    text-transform: uppercase;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    background-color: var(--nav-list-bg-clr);
+    padding: .5em .8em;
+    border-radius: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+main {
+    padding: .5em;
+}
+
+footer {
+    position: absolute;
+    bottom: 1rem;
+    text-align: center;
+    border-top: 1px solid var(--text-clr);
+    padding-top: .5em;
+    color: var(--text-clr);
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Startsida */
+.welcome {
+    font-size: 1rem;
+    color: var(--text-clr);
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+
+.welcome p {
+    margin-bottom: 1em;
+}
+
+.pop {
+    color: var(--pop-clr);
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+/* Presentation */
+.presentation {
+    color: var(--text-clr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    width: 60%;
+    font-size: 1rem;
+}
+
+.content-header {
+    font-weight: 500;
+    margin-bottom: .7em;
+}
+
+.list-item {
+    list-style: none;
+    line-height: 1.8em;
+}
+
+.bold {
+    font-weight: 400;
+}
+
+.picture {
+    width: 40%;
+    text-align: center;
+}
+
+.profile-picture {
+    width: 100%;
+    border: 1px solid var(--text-clr);
+}
+
+.picture-text {
+    color: var(--text-clr);
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: .7rem;
+}
+
+.questions {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.about-me {
+    margin-top: 1em;
+    color: var(--text-clr);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.about-me a {
+    color: var(--pop-clr);
+    font-weight: 500;
+}
