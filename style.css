@@ -69,7 +69,25 @@ main {
     max-width: 1000px;
 }
 
+@media only screen and (min-width: 500px) {
+    main {
+        padding: 2em;
+    }
+}
+
 /* Startsida */
+.effect {
+    color: var(--text-clr);
+    -webkit-transition: color .2s ease .2s;
+    transition: color .2s ease .2s;
+}
+
+.effect:hover {
+    color: var(--pop-clr);
+    -webkit-transition: color .15s ease 0s;
+    transition: color .15s ease 0s;
+}
+
 .welcome {
     font-size: 1rem;
     color: var(--text-clr);
