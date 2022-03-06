@@ -78,13 +78,11 @@ main {
 /* Startsida */
 .effect {
     color: var(--text-clr);
-    -webkit-transition: color .2s ease .2s;
     transition: color .2s ease .2s;
 }
 
 .effect:hover {
     color: var(--pop-clr);
-    -webkit-transition: color .15s ease 0s;
     transition: color .15s ease 0s;
 }
 
